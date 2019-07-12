@@ -1,0 +1,115 @@
+
+#side-menu {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgb(56, 53, 51);
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+#side-menu .side-menu-nav {
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255,255,255);
+    display: block;
+    transition: 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#side-menu .side-menu-nav:first-of-type {
+    margin-top: 50px;
+}
+
+#side-menu .side-menu-nav:hover {
+    background: rgb(209, 91, 91);
+    
+}
+
+#side-menu .side-menu-nav img {
+    height: 24px;
+}
+
+header img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header #nav-links {
+    display: none;
+}
+
+.picture-banner {
+    overflow: hidden;
+    height: 40vw;
+}
+
+.picture-banner img {
+    width: auto;
+    margin-left: -50vw;
+    height: 100%;
+}
+
+.picture-banner h1 {
+    font-size: 8vw;
+}
+
+.picture-banner div {
+    top: 20vw;
+}
+
+.picture-banner div input {
+    padding: 4vw;
+    font-size: 3vw;
+}
+
+#side-menu-opener {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    user-select: none;
+    font-size: 40px;
+    color: rgb(255,255,255);
+}
+
+#side-menu-shadow {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    z-index: 2;
+    background: rgba(0,0,0, 0.7);
+    transition: 0.5s;
+    top: 0;
+    left: 0;    
+}
+
+#side-menu .close-btn {
+    display: block;
+    position: absolute;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255,255,255);
+    transition: 0.3s;
+    right: 0;
+    margin-right: 30px
+}
+
+#side-menu .close-btn:hover {
+    color: rgb(209, 91, 91);    
+}

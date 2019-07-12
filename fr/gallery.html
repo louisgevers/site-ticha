@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticha</title>
+    <link rel="icon" type="image/png" href="../images/TichaSignatureIcon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand:700" rel="stylesheet">
+    
+    <!-- Main style followed by specific style -->
+    <link rel="stylesheet" type="text/css" href="../style/home-style.css">    
+    <link rel="stylesheet" type="text/css" href="../style/gallery-style.css">    
+    <link rel="stylesheet" type="text/css" href="../style/main-mobile.css" media="screen and (max-width: 720px)">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/gallery-js.js"></script> 
+    <script src="../js/side-menu.js"></script>            
+</head>
+<body>
+    <div id="side-menu-shadow">
+            <div id="side-menu">
+                    <button class="close-btn" id="close-side-menu-btn">&times;</button>
+                    <a class ="side-menu-nav" href="../index.html">ACCUEIL</a>
+                    <a class ="side-menu-nav" href="about.html">A PROPOS</a>
+                    <a class ="side-menu-nav" href="gallery.html">GALERIE</a>
+                    <a class ="side-menu-nav" href="about.html#exhibitions">EXPOS</a>
+                    <a class ="side-menu-nav" href="contact.html">CONTACT</a>
+                    <a class ="side-menu-nav" href="../en/gallery.html"><img src="../images/english.png" alt="english"></a>
+            </div>
+    </div>
+    <header>
+        <span id="side-menu-opener">&#9776;</span>            
+        <a href="../index.html"><img alt="Ticha signature" src="../images/TichaSignature.png"/></a>
+        <div id="nav-links">
+            <nav>
+                <a class ="header-nav" href="../index.html">ACCUEIL</a>
+                <a class ="header-nav" href="about.html">A PROPOS</a>
+                <a class ="header-nav" href="gallery.html" id="currentpage" >GALERIE</a>
+                <a class ="header-nav" href="about.html#exhibitions">EXPOS</a>
+                <a class ="header-nav" href="contact.html">CONTACT</a>
+                <a class ="side-menu-nav" href="../en/gallery.html"><img src="../images/english.png" alt="english"></a>                
+            </nav>
+        </div>
+    </header>
+    <div class="page-container">
+        <div class="picture-banner">
+            <img alt="background image" src="../images/gallery-picturebanner.jpg" draggable="false"/>
+            <h1>Galerie</h1>
+        </div>
+        <div id="gallery-pictures-container" class="maincontent">
+                <!-- <div id="art-1" class="art-container">
+                    <img class="art-img" src="../images/landscape_05.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-2" class="art-container">
+                    <img class="art-img" src="../images/landscape_02.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-3" class="art-container">
+                    <img class="art-img" src="../images/landscape_03.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-4" class="art-container">
+                    <img class="art-img" src="../images/landscape_04.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-5" class="art-container">
+                    <img class="art-img" src="../images/landscape_01.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div> -->
+                <!-- <div id="art-6" class="art-container">
+                        <img class="art-img" src="../images/character_07.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div> -->
+                <!-- <div id="art-7" class="art-container">
+                        <img class="art-img" src="../images/character_05.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-8" class="art-container">
+                    <img class="art-img" src="../images/character_03.jpg">
+                    <div class="hover-filter"></div>
+                    <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-9" class="art-container">
+                        <img class="art-img" src="../images/character_04.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-10" class="art-container">
+                        <img class="art-img" src="../images/character_11.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-11" class="art-container">
+                        <img class="art-img" src="../images/character_17.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-13" class="art-container">
+                        <img class="art-img" src="../images/character_08.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-14" class="art-container">
+                        <img class="art-img" src="../images/character_01.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-16" class="art-container">
+                        <img class="art-img" src="../images/character_02.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                    </div> 
+                <div id="art-17" class="art-container">
+                        <img class="art-img" src="../images/character_12.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-18" class="art-container">
+                        <img class="art-img" src="../images/character_13.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-19" class="art-container">
+                        <img class="art-img" src="../images/character_14.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-20" class="art-container">
+                        <img class="art-img" src="../images/character_15.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div>
+                <div id="art-21" class="art-container">
+                        <img class="art-img" src="../images/character_16.jpg">
+                        <div class="hover-filter"></div>
+                        <button class="more-info-btn">Agrandir</button>
+                </div> -->
+        </div>
+        <footer>
+                <div class="contacts">
+                    <p>Email: <a href="mailto:ticha.art@gmail.com">ticha.art@gmail.com</a></p>
+                </div>
+        </footer>
+    </div>
+    <div class="modalbox-container">
+            <div class="modalbox-content">
+                <img id="to-show-image" src="../images/aboutme-ticha.jpg"/>
+                <!-- <div id="to-show-description">
+                    <div id="description-art-1" class="description">
+                        <h1>Art 1 title</h1>
+                        <h2>100x100x100</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div id="description-art-2" class="description">
+                        <h1>Art 2 title</h1>
+                        <h2>100x100x100</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div id="description-art-3" class="description">
+                        <h1>Art 3 title</h1>
+                        <h2>100x100x100</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div id="description-art-4" class="description">
+                        <h1>Art 4 title</h1>
+                        <h2>100x100x100</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

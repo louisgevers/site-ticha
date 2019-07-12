@@ -1,0 +1,229 @@
+
+#side-menu {
+    width: 0;
+}
+
+#side-menu-opener {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgb(85, 77, 73);
+    z-index: 1;
+    min-width: max-content;
+}
+
+header img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+header nav img {
+    position: relative;
+    transform: translate(0, 0);
+    height: 16px;
+    margin-right: 1em;
+}
+
+header #nav-links {   
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translate(0, -50%);
+    min-width: max-content;    
+}
+
+header nav a {
+    margin: 1em;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+header nav #currentpage {
+    color: rgb(209, 91, 91);
+}
+
+header nav a:hover {
+    color: rgb(209, 91, 91);
+}
+
+.page-container {
+    position: absolute;
+    margin: 80px auto 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.picture-banner img {
+    position: relative;
+    width: 100%;
+    min-width: 700px;
+}
+
+.picture-banner h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: rgb(255,255,255);
+    top: 3vw;
+    margin: 0;
+    font-size: 4vw;
+    font-weight: normal;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.picture-banner div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10vw;
+}
+
+.picture-banner div input {
+    background: rgb(209, 91, 91);
+    color: rgb(255,255,255);
+    outline: none;
+    border: none;
+    font-size: 1.5vw;
+    padding: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    
+}
+
+.picture-banner div input:hover {
+    background: rgb(231, 117, 117);
+}
+
+.picture-banner div input:active {
+    color: rgb(209, 91, 91);
+    background: rgb(85, 77, 73);
+}
+
+.maincontent {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.maincontent .contentblock h2 {
+    color: rgb(209, 91, 91);
+    font-size: 2.4em;
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.maincontent .contentblock {
+    overflow: hidden; 
+}
+
+.maincontent .contentblock .article-head img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.maincontent .contentblock .article {
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    top: 50%;
+}
+
+.maincontent .contentblock .article p {
+    font-size: 1.4em;
+    line-height: 2em;
+    font-family: 'Quicksand', sans-serif;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+
+
+.maincontent .contentblock .article p::after {
+    content: "...";
+}
+
+.maincontent .contentblock .article input[type="submit"] {
+    background: rgb(209, 91, 91);
+    color: rgb(255,255,255);
+    outline: none;
+    border: none;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-width: max-content;
+    overflow: visible;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.maincontent .contentblock .article input[type="submit"]:hover {
+    background: rgb(231, 117, 117);    
+}
+
+.maincontent .contentblock .article input[type="submit"]:active {
+    color: rgb(209, 91, 91);
+    background: rgb(85, 77, 73);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left:0;
+    background: rgb(53, 49, 48);
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+}
+
+footer * {
+    color: rgb(255,255,255);
+}
+
+footer .contacts {
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+@media screen and (max-width: 720px){
+
+    .maincontent .contentblock .article-head {
+        width: 100%;
+    }
+
+    .maincontent .contentblock .article-head img {
+        width: 100%;
+        max-height: none;
+    }
+
+    .maincontent .contentblock .article {
+        top: 0;
+        padding-top: 5px;
+        clear: both;
+    }
+
+    .maincontent .contentblock .article p {
+        font-size: 1.2em;
+    }
+
+    .maincontent .contentblock .article input[type="submit"] {
+        width: 100%;
+    }
+}
